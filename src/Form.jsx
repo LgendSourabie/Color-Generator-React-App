@@ -15,6 +15,7 @@ const Form = () => {
     e.preventDefault();
     try {
       const newList = new Values(text).all(10);
+
       setList(newList);
       toast.success("awesome");
     } catch (err) {
